@@ -1,6 +1,8 @@
 package Challenge
 import java.time._
 
-class Order(id:Int,orderDate:LocalDate) {
-
+class Order(identifier:Int,orderDate:LocalDate,productList:List[Product]) {
+  val id = identifier
+  val date = orderDate
+  val products = productList
 }
