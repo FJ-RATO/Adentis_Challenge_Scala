@@ -1,6 +1,7 @@
 package Challenge
 import java.time._
 
-class Product(id:Int,creationDate:LocalDate) extends Item{
-
+class Product(identifier:Int,creationDate:LocalDate) extends Item{
+  val id = identifier
+  val date = creationDate
 }
