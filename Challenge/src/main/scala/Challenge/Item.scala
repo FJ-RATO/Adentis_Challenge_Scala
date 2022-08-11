@@ -1,0 +1,5 @@
+package Challenge
+
+trait Item {
+
+}
