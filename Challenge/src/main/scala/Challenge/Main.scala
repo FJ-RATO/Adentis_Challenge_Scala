@@ -43,7 +43,7 @@ object Main {
         val accLess6 = younger6 + order.products.count(product => product.date.isAfter(filters(1)) && product.date.isBefore(filters(2)))
         val accLess3 = younger3 + order.products.count(product => product.date.isAfter(filters(2)))
 
-        grouper(xs, filters, older12 + accMore12, younger12 + accLess12, younger6 + accLess6, younger3 + accLess3)
+        grouper(xs, filters, accMore12,  accLess12, accLess6, accLess3)
       }
     }
 
